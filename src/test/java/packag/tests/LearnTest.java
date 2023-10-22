@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import packag.utils.GooglePage;
 
+
 public class LearnTest extends BaseTest {
 
     GooglePage googlePage;
@@ -13,7 +14,6 @@ public class LearnTest extends BaseTest {
     @Test
     public void learnTest() {
         driver.get("https://www.google.com");
-        System.out.println();
         googlePage = new GooglePage();
         googlePage.getCancelButton().click();
         googlePage.getSearchbar().sendKeys("YouTube");
