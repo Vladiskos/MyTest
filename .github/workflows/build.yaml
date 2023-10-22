@@ -15,5 +15,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'zulu'
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
       - run: ./gradlew clean test
         name: Build
