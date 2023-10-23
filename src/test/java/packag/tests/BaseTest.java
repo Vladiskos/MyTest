@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import packag.utils.BasePage;
 
 import java.net.MalformedURLException;
@@ -15,7 +14,11 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
-    WebDriver driver;
+    protected static WebDriver driver;
+
+    public WebDriver getDriver() {
+        return driver;
+    }
 
     @BeforeClass
     public void setUp() throws MalformedURLException {
@@ -25,15 +28,10 @@ public abstract class BaseTest {
 //        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        BasePage.setDriver(driver);
     }
-//    @BeforeMethod
-//    public void setUpTest() {
-//        driver = new ChromeDriver();
-//    }
-
     @AfterTest
     void teardown() {
+        driver.close();
         driver.quit();
     }
 
