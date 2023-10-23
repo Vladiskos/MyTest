@@ -15,8 +15,8 @@ jobs:
         with:
           java-version: '11'
           distribution: 'zulu'
-      - uses: browser-actions/setup-chrome@v1
-      #- uses: Xotabu4/selenoid-github-action@v2
+      #- uses: browser-actions/setup-chrome@v1
+      - uses: Xotabu4/selenoid-github-action@v2
       - name: Make gradlew executable
         run: chmod +x ./gradlew
       - run: ./gradlew clean test
