@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon Oct 23 00:25:55 GMT 2023","Mon Oct 23 00:26:06 GMT 2023","10987","Gradle suite","Gradle test","packag.tests.LearnTest","packag.tests.LearnTest","learnTest","learnTest",""
