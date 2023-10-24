@@ -1,3 +1,3 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Oct 23 04:10:16 GMT 2023","Mon Oct 23 04:10:17 GMT 2023","931","Gradle suite","Gradle test","packag.tests.LearnTest","packag.tests.LearnTest","lest","lest",""
-"broken","Mon Oct 23 04:10:04 GMT 2023","Mon Oct 23 04:10:15 GMT 2023","11046","Gradle suite","Gradle test","packag.tests.LearnTest","packag.tests.LearnTest","learnTest","learnTest",""
+"broken","Tue Oct 24 15:00:54 GMT 2023","Tue Oct 24 15:01:05 GMT 2023","10895","Gradle suite","Gradle test","packag.tests.LearnTest","packag.tests.LearnTest","learnTest","learnTest",""
+"passed","Tue Oct 24 15:01:05 GMT 2023","Tue Oct 24 15:01:06 GMT 2023","723","Gradle suite","Gradle test","packag.tests.LearnTest","packag.tests.LearnTest","lest","lest",""
